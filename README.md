@@ -1,1 +1,3 @@
-# MailFX
+# je-Mail
+
+E-Mail client
