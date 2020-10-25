@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.3.4.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+    id 'io.freefair.lombok' version '5.2.1'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
+}
+generateLombokConfig.enabled = false
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+targetCompatibility = JavaVersion.VERSION_11
+sourceCompatibility = JavaVersion.VERSION_11
+
+javafx {
+    version = '11.0.2'
+    modules = [ 'javafx.controls', 'javafx.fxml', 'javafx.web' ]
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-mail'
+    implementation 'net.rgielen:javafx-weaver-spring-boot-starter:1.3.0'
+}
+
+dependencyManagement {
+    dependencies {
+        imports {
+            mavenBom('org.springframework.boot:spring-boot-dependencies:2.3.4.RELEASE')
+        }
+    }
+}
