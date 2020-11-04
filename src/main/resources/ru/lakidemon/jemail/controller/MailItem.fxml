@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<AnchorPane prefHeight="106.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.lakidemon.jemail.controller.MailItem">
+    <children>
+      <Pane layoutX="14.0" layoutY="14.0" onMouseClicked="#onMessageClicked" style="-fx-border-color: #e2e2e2; -fx-border-width: 3;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+              <Label fx:id="subject" prefHeight="17.0" prefWidth="562.0" text="Title" />
+              <Label fx:id="from" layoutY="17.0" prefHeight="17.0" prefWidth="210.0" text="From:" />
+              <Label fx:id="text" layoutY="31.0" prefHeight="49.0" prefWidth="574.0" text="Mail contents" />
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane fx:id="root" prefHeight="233.0" prefWidth="213.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.lakidemon.jemail.controller.AccountDialog">
+    <children>
+        <TextField fx:id="host" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="180.0" promptText="imap server" />
+        <Spinner fx:id="port" editable="true" layoutX="14.0" layoutY="52.0" prefHeight="25.0" prefWidth="180.0" />
+        <TextField fx:id="username" layoutX="14.0" layoutY="91.0" prefHeight="25.0" prefWidth="180.0" promptText="login" />
+        <PasswordField fx:id="password" layoutX="14.0" layoutY="131.0" prefHeight="25.0" prefWidth="180.0" promptText="password" />
+        <CheckBox fx:id="ssl" layoutX="14.0" layoutY="169.0" mnemonicParsing="false" selected="true" text="SSL" />
+        <Button layoutX="84.0" layoutY="194.0" mnemonicParsing="false" onMouseClicked="#submitForm" prefHeight="25.0" prefWidth="40.0" text="OK" />
+    </children>
+</AnchorPane>
